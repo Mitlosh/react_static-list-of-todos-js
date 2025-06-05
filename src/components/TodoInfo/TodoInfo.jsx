@@ -18,10 +18,7 @@ export const TodoInfo = ({ todo }) => {
     >
       <h2 className="TodoInfo__title">{todo.title}</h2>
 
-      <UserInfo
-        key={getUserById(todo.userId)}
-        user={getUserById(todo.userId)}
-      />
+      <UserInfo user={getUserById(todo.userId)} />
     </article>
   );
 };
